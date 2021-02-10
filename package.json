@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "fs": "0.0.1-security",
+    "promptpay-qr": "^0.4.4",
+    "qrcode": "^1.4.4",
+    "qrcode.vue": "^3.2.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -33,7 +37,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars": "off"
+    }
   },
   "browserslist": [
     "> 1%",
