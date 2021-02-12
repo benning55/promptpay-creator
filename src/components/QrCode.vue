@@ -17,7 +17,12 @@
         <input v-model="amount" type="number" id="amount" name="amount"  placeholder="4.25"/>
       </div>
       <h1>{{ phoneValidate }}</h1>
-      <button @click="createQr" type="submit">Generate QR</button>
+
+      <div class="btn-adj">
+        <div class="btn-create" @click="createQr">
+          <p class="btn-text">Generate QR</p>
+        </div>
+      </div>
   </div>
 </template>
 
@@ -84,6 +89,21 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .space {
+  margin: 0;
+}
+.btn-create{
+  padding: 15%;
+  border-radius: 100px;
+  background-color: white;
+}
+.btn-create:hover{
+  opacity: 0.5;
+}
+.btn-adj {
+  width: 50%;
+  margin: 0 auto;
+}
+.btn-text {
   margin: 0;
 }
 </style>

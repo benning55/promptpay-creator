@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,400&display=swap');
+
 *,
 *::before,
 *::after {
@@ -9,6 +11,7 @@ body {
   background: #2193b0;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Nunito', sans-serif;
 }
 
 .container {
@@ -34,4 +37,6 @@ body {
 
 h1 {
   font-size: 2rem;
+  font-weight: bold;
+  color: whitesmoke;
 }
