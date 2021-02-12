@@ -23,6 +23,8 @@
           <p class="btn-text">Generate QR</p>
         </div>
       </div>
+
+      <div style="margin-top: 5%;"></div>
   </div>
 </template>
 
@@ -92,7 +94,7 @@ export default {
   margin: 0;
 }
 .btn-create{
-  padding: 15%;
+  padding: 10% 5%;
   border-radius: 100px;
   background-color: white;
 }
