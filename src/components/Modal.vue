@@ -31,6 +31,7 @@ export default {
         margin: 0 auto;
         background: white;
         border-radius: 10px;
+        z-index: 15;
     }
 
     .modal h1, p {
