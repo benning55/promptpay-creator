@@ -2,11 +2,6 @@
   <div id="app">
     <div v-show="showModal">
       <Modal :error="errorData" :state="showModal" @close="toggleModal">
-        <template>
-          <div>
-            <a href="#">Benning Is Awsome</a>
-          </div>
-        </template>
       </Modal>
     </div>
     <div style="width: 100%;">
@@ -28,6 +23,13 @@
       QR,
       Modal
     },
+    created() {
+      if(this.$workbox) {
+        this.$workbox.addEventListener("waiting", () => {
+          this.showUpgradeUI = true
+        })
+      }
+    },
     data() {
       return {
         showModal: false,
@@ -41,6 +43,10 @@
       setError(value) {
         this.errorData = value
         this.toggleModal()
+      },
+      async accept() {
+        this.showUpgradeUI = false
+        await this.$workbox.messageSW({ type: "SKIP_WAITING" });
       }
     }
   }
