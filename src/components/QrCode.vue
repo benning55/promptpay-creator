@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div style="margin-top: 5rem;"></div>
+    <div style="margin-top: 10%;"></div>
   </div>
 </template>
 
