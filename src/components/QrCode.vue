@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div style="margin-top: 5%;"></div>
+    <div style="margin-top: 5rem;"></div>
   </div>
 </template>
 
@@ -146,6 +146,7 @@
     display: block;
     border-bottom: 0.3rem solid transparent;
     transition: all 0.3s;
+    z-index: -5;
   }
 
   /* .form-input{
