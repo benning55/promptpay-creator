@@ -9,7 +9,7 @@
         </template>
       </Modal>
     </div>
-    <div style="width: 100%; margin-top: 3rem;">
+    <div style="width: 100%;">
         <img style="width: 100%;" alt="Vue logo" src="./assets/logo.png">
     </div>
     <div class="container">
